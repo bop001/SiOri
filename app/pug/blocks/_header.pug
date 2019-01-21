@@ -1,4 +1,51 @@
-header.header
-    .header__topline
-        
+nav.navbar.navbar-expand-md.navbar-expand-lg.navbar-light.flex-column.navbar-custom.position-fixed
+    a.navbar-brand.m-0.p-0(href='#')
+        .sidebar-header.d-none.d-md-block
+           img(src='/img/logo-s.svg')
+    button.navbar-toggler.align-self-start(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse.align-items-start.flex-wrap
+        ul.navbar-nav.d-flex.justify-content-center.flex-column
+            li.nav-item.position-relative
+                a.nav-link.text-white(href='#') Предложения
+                ul.active.justify-content-center.flex-column.sub-menu.position-absolute
+                    li.nav-item.active
+                        a.nav-link.text-black(href='#') Предложения
+                    li.nav-item
+                        a.nav-link.text-black(href='#') Коты
+                    li.nav-item
+                        a.nav-link.text-black(href='#') Кошки
+            li.nav-item
+                a.nav-link.text-white(href='#') Коты
+            li.nav-item
+                a.nav-link.text-white(href='#') Кошки
+                ul.active.justify-content-center.flex-column.sub-menu.position-absolute
+                    li.nav-item.active
+                        a.nav-link.text-black(href='#') Предложения
+                    li.nav-item
+                        a.nav-link.text-black(href='#') Коты
+                    li.nav-item
+                        a.nav-link.text-black(href='#') Кошки
+            li.nav-item
+                a.nav-link.text-white(href='#') Выпускники
+            li.nav-item
+                a.nav-link.text-white(href='#') О природе
+            li.nav-item
+                a.nav-link.text-white(href='#') Фото
+            li.nav-item
+                a.nav-link.text-white(href='#') Блог
+            li.nav-item
+                a.nav-link.text-white(href='#') Контакты
+        .socials.d-flex.justify-content-center
+            a(href='#')i.fab.fa-facebook-f
+            a(href='#')i.fab.fa-vk
+            a(href='#')i.fab.fa-instagram
+
+
+
+
+
+
+
+
 

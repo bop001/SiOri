@@ -1,0 +1,68 @@
+.sidebar-header
+  padding: 15px
+
+.navbar-custom
+  z-index: 1000
+  height: 100vh
+  width: 100%
+  max-width: 250px
+  background-color: rgba(0, 0, 0, 0.7)
+  transition: 0.3s
+
+  @include media(767)
+    background-color: transparent
+
+.navbar-custom.active
+  @include media(767)
+    background-color: rgba(0, 0, 0, 0.7)
+
+
+.sub-menu
+  background-color: #f6f6f6
+  width: 200px
+  height: auto
+  top: -150%
+  left: 197%
+  transition: 0.5s
+  display: none
+  padding: 15px
+
+  @include media(767)
+    top: 0
+    left: 115%
+
+  &:before
+    content: ''
+    border: 10px solid transparent
+    border-right: 10px solid #f6f6f6
+    top: 40%
+    left: -20px
+    position: absolute
+
+    @include media(767)
+      top: 12px
+
+.navbar-toggler
+  margin-bottom: auto
+
+.nav-item
+  transition: 0.3s
+  cursor: pointer
+
+.nav-item:hover
+  background-color: rgba(0, 0, 0, 0.3)
+  transform: translateX(5px)
+
+.nav-item:hover > .sub-menu
+  display: block
+
+.socials
+  cursor: pointer
+
+.fab.fa-facebook-f,
+.fab.fa-vk,
+.fab.fa-instagram
+  margin: 0 15px
+  color: #fff
+
+

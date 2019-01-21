@@ -33,8 +33,10 @@
   "dependencies": {
     "@fancyapps/fancybox": "^3.3.5",
     "animate.css": "^3.7.0",
+    "bootstrap": "^4.2.1",
     "masonry-layout": "^4.2.2",
     "owl.carousel": "^2.3.4",
+    "popper.js": "^1.14.6",
     "responsive-tabs": "^1.6.3",
     "slick-carousel": "^1.8.1"
   }
