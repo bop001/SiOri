@@ -196,6 +196,9 @@ select, input, textarea {
     .award {
       margin-left: 0; } }
 
+ol .breadcrumb {
+  margin-bottom: 0; }
+
 @media (max-width: 767px) {
   .container {
     padding: 0 16px; } }
@@ -214,12 +217,22 @@ select, input, textarea {
     .galary {
       margin-left: 0; } }
 
+ol .breadcrumb {
+  margin-bottom: 0 !important; }
+
+.carousel.slide {
+  margin: 0;
+  padding: 0; }
+
 .our-propose {
   margin-left: 250px; }
 
 .our-propose-links a {
   margin: 4px;
   font-size: 20px; }
+
+ol .breadcrumb {
+  margin-bottom: 0 !important; }
 
 .text-page,
 .title-page {
@@ -230,7 +243,19 @@ select, input, textarea {
       margin-left: 0; } }
 
 .breadcrumb-main {
-  background: #eee; }
+  background: #eee;
+  margin-bottom: 0; }
+
+.title-page {
+  background-image: url(../img/main/IMG_2277.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  -webkit-background-size: cover;
+          background-size: cover;
+  height: 350px; }
+
+.title-page {
+  color: #fff; }
 
 .contact-form {
   margin-left: 250px; }

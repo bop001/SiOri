@@ -52,6 +52,7 @@ gulp.task('css-libs', function(){
     'app/vendor/css/preloader.css',
     'node_modules/slick-carousel/slick/slick.css',
     'node_modules/bootstrap/dist/css/bootstrap.css',
+    'node_modules/bootstrap/dist/photoswipe.css',
   ])
     .pipe(concat('libs.min.css'))
     .pipe(cssnano())
@@ -70,6 +71,7 @@ gulp.task('scripts', function(){
       "node_modules/responsive-tabs/js/jquery.responsiveTabs.js",
       'node_modules/slick-carousel/slick/slick.js',
       'node_modules/bootstrap/dist/js/bootstrap.js',
+      'node_modules/bootstrap/dist/photoswipe.js',
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
