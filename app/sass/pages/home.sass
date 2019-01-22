@@ -1,14 +1,16 @@
 .content,
 .cats-img,
 .propos,
-.last-write
+.last-write,
+.slide
   margin-left: 250px
   padding: 0 90px
 
 .content,
 .cats-img,
 .propos,
-.last-write
+.last-write,
+.slide
 
   @include media(767)
     margin-left: 0
@@ -23,7 +25,20 @@
   padding: 5px
   border: 1px solid #fff
   
-  & h3
+  & h5
     color: #fff
+
+.cirle
+  margin-left: 32px
+
+  &:after
+    content: ''
+    position: absolute
+    border: 2px solid #fff
+    border-radius: 50%
+    bottom: -7px
+    right: -12px
+    width: 32px
+    height: 32px
 
 

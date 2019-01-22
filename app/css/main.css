@@ -107,7 +107,8 @@ select, input, textarea {
 .content,
 .cats-img,
 .propos,
-.last-write {
+.last-write,
+.slide {
   margin-left: 250px;
   padding: 0 90px; }
 
@@ -115,14 +116,16 @@ select, input, textarea {
   .content,
   .cats-img,
   .propos,
-  .last-write {
+  .last-write,
+  .slide {
     margin-left: 0; } }
 
 @media (max-width: 480px) {
   .content,
   .cats-img,
   .propos,
-  .last-write {
+  .last-write,
+  .slide {
     padding: 0;
     width: 100%; } }
 
@@ -131,12 +134,111 @@ select, input, textarea {
   left: 0;
   padding: 5px;
   border: 1px solid #fff; }
-  .title-img h3 {
+  .title-img h5 {
     color: #fff; }
+
+.cirle {
+  margin-left: 32px; }
+  .cirle:after {
+    content: '';
+    position: absolute;
+    border: 2px solid #fff;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    bottom: -7px;
+    right: -12px;
+    width: 32px;
+    height: 32px; }
+
+.breadcrumb-main,
+.title-page,
+.cats {
+  margin-left: 250px; }
+  @media (max-width: 767px) {
+    .breadcrumb-main,
+    .title-page,
+    .cats {
+      margin: 0; } }
+
+@media (max-width: 767px) {
+  .breadcrumb-main {
+    display: none; } }
+
+.container {
+  padding: 0 90px; }
+
+.breadcrumb-main,
+.card-cats,
+.cats-images,
+.about-cat,
+.parents,
+.award {
+  margin-left: 250px; }
+  @media (max-width: 767px) {
+    .breadcrumb-main,
+    .card-cats,
+    .cats-images,
+    .about-cat,
+    .parents,
+    .award {
+      margin-left: 0; } }
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 16px; } }
+
+.parent-outer {
+  padding: 1rem;
+  border: 1px solid #000; }
+
+.list-style:before {
+  content: '.';
+  color: #000; }
+
+.galary {
+  margin-left: 250px; }
+  @media (max-width: 767px) {
+    .galary {
+      margin-left: 0; } }
+
+.our-propose {
+  margin-left: 250px; }
+
+.our-propose-links a {
+  margin: 4px;
+  font-size: 20px; }
+
+.text-page,
+.title-page {
+  margin-left: 250px; }
+  @media (max-width: 767px) {
+    .text-page,
+    .title-page {
+      margin-left: 0; } }
+
+.breadcrumb-main {
+  background: #eee; }
+
+.contact-form {
+  margin-left: 250px; }
+  @media (max-width: 767px) {
+    .contact-form {
+      margin-left: 0; } }
+
+.fab.fa-facebook-f.contact,
+.fab.fa-vk.contact,
+.fab.fa-instagram.contact {
+  color: #000;
+  font-size: 32px; }
+
+.custom {
+  border: 1px solid #000;
+  padding: 16px; }
 
 .footer {
   border: 1px solid #000;
-  margin-left: 250px; }
+  margin-left: 250px;
+  background: #eee; }
   @media (max-width: 1024px) {
     .footer {
       display: none; } }
@@ -169,7 +271,7 @@ select, input, textarea {
   width: 200px;
   height: auto;
   top: -150%;
-  left: 197%;
+  left: 126%;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;

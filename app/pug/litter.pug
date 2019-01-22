@@ -1,0 +1,101 @@
+extends blocks/_layout
+
+append content
+    section.breadcrumb-main.breadcrumb-dark
+        nav(aria-label='breadcrumb')
+            ol.breadcrumb
+                li.breadcrumb-item
+                    a(href='#') Главная
+                li.breadcrumb-item.active(aria-current='cats') Литтер
+    section.title-page.mt-3.mt-sm-3.mb-3
+        .container
+            .row
+                .col-12
+                    h1 Литтер
+    section.parents.mt-5
+        .container
+            .row
+                .col-12.mt-3.col-xl-6
+                    .parent-outer
+                        .row.d-flex.flex-column.flex-sm-column.flex-md-row.flex-xl-row
+                            .col-12.col-sm-12.col-md-5.col-xl-5
+                                .parent-cat-img
+                                    img(src='img/card-cats/cats.jpg')
+                            .col-12.col-sm-7.col-md-7.col-xl-7
+                                .parent-cat-info
+                                    h5 Мама
+                                    h5 Alisia SiOriPraid
+                                    a(href='#') Смотреть профиль
+
+                .col-12.mt-3.col-xl-6
+                    .parent-outer
+                        .row.d-flex.flex-column.flex-sm-column.flex-md-row.flex-xl-row
+                            .col-12.col-sm-12.col-md-5.col-xl-5
+                                .parent-cat-img
+                                    img(src='img/card-cats/cats.jpg')
+                            .col-12.col-sm-7.col-md-7.col-xl-7
+                                .parent-cat-info
+                                    h5 Папа
+                                    h5 Viktor Gift Of Kings
+    section.galary.mt-3
+        .container
+            .row
+                .col-8
+                    h4 Дата рождения 31.12.2018
+            .row.mt-3.mt-xl-5
+                .col-12.col-sm-12.col-md-12.col-xl-6
+                    #carouselExampleSlidesOnly.carousel.slide(data-ride='carousel')
+                        .carousel-inner
+                            .carousel-item.active
+                                img.d-block.w-100(src='/img/slider/IMG_2161.jpg', alt='cat')
+                            .carousel-item
+                                img.d-block.w-100(src='/img/slider/IMG_2161.jpg', alt='cat')
+                .col
+                    .galary-info.mt-3
+                        h4.mb-3 Hermes SiOri Praid
+                        ul
+                            li Пол:
+                                span Male
+                            li Порода:
+                                span OSH
+                            li Окрас:
+                                span Дым
+                            li Статус:
+                                span Продается (смотреть)
+            .row.mt-3.mt-xl-5
+                .col.order-2.order-sm-2.order-md-2.order-xl-1
+                    .galary-info.mt-3
+                        h4.mb-3 Hermes SiOri Praid
+                        ul
+                            li Пол:
+                                span Male
+                            li Порода:
+                                span OSH
+                            li Окрас:
+                                span Дым
+                            li Статус:
+                                span Продается (смотреть)
+                .col-12.col-sm-12.col-md-12.col-xl-6.order-1.order-sm-1.order-md-1.order-xl-2
+                    .galary-img
+                        img(src='img/litter/vipusk.jpg')
+            .row.mt-3.mt-xl-5
+                .col-12.col-sm-12.col-md-12.col-xl-6
+                    #carouselExampleSlidesOnly.carousel.slide(data-ride='carousel')
+                        .carousel-inner
+                            .carousel-item.active
+                                img.d-block.w-100(src='/img/slider/IMG_2161.jpg', alt='cat')
+                            .carousel-item
+                                img.d-block.w-100(src='/img/slider/IMG_2161.jpg', alt='cat')
+                .col
+                    .galary-info.mt-3
+                        h4.mb-3 Hermes SiOri Praid
+                        ul
+                            li Пол:
+                                span Male
+                            li Порода:
+                                span OSH
+                            li Окрас:
+                                span Дым
+                            li Статус:
+                                span Продается (смотреть)
+

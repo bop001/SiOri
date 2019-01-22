@@ -1,0 +1,89 @@
+extends blocks/_layout
+
+append content
+    section.breadcrumb-main.breadcrumb-dark
+        nav(aria-label='breadcrumb')
+            ol.breadcrumb
+                li.breadcrumb-item
+                    a(href='#') Главная
+                li.breadcrumb-item.active(aria-current='cats') Страница предложения
+
+
+    section.title-page.mt-3.mt-sm-3
+        .container
+            .row
+                .col-12
+                    h1 Страница предложения
+    section.card-cats.mt-5
+        .container
+            .row.flex-wrap
+                .col-12.col-sm-12.col-md-12.col-xl-8
+                    .card-cats-img
+                        img(src='img/card-cats/cats.jpg')
+                .col
+                    .card-cats-info.mt-3.mb-md-2
+                        ul.align-self-start
+                            li Порода:
+                                span SIA
+                            li Окрас:
+                                span Дым
+                            li Дата рождения:
+                                span 31.12.2018
+                            li Заводчик:
+                                span Якимова Юлия
+                            li Совладелец:
+                                span Якимов Алексей
+                            li Статус:
+                                span Не учавствует в племенной работе
+                            li  Переехал
+                                span в семью
+                            li Титул:
+                                span Чемпиона мира (еще 9)
+                    a(href='#') Родословная
+    section.cats-images.mt-3.mt-md-3.mt-xl-5
+        .container
+            .row
+                .col-12.col-sm-12.col-mf.col-xl.mt-3
+                    .cats-images-item
+                        img(src='img/card-cats/cats.jpg')
+                .col-12.col-sm-12.col-mf.col-xl.mt-3
+                    .cats-images-item
+                        img(src='img/card-cats/cats.jpg')
+                .col-12.col-sm-12.col-mf.col-xl.mt-3
+                    .cats-images-item
+                        img(src='img/card-cats/cats.jpg')
+                .w-100.mt-3
+                .col-12.col-sm-12.col-mf.col-xl.mt-3
+                    .cats-images-item
+                        img(src='img/card-cats/cats.jpg')
+                .col-12.col-sm-12.col-mf.col-xl.mt-3
+                    .cats-images-item
+                        img(src='img/card-cats/cats.jpg')
+                .col-12.col-sm-12.col-mf.col-xl.mt-3
+                    .cats-images-item
+                        img(src='img/card-cats/cats.jpg')
+    section.parents.mt-5
+        .container
+            .row
+                .col-12.mt-3.col-xl-6
+                    .parent-outer
+                        .row.d-flex.flex-column.flex-sm-column.flex-md-row.flex-xl-row
+                            .col-12.col-sm-12.col-md-5.col-xl-5
+                                .parent-cat-img
+                                    img(src='img/card-cats/cats.jpg')
+                            .col-12.col-sm-7.col-md-7.col-xl-7
+                                .parent-cat-info
+                                    h5 Мама
+                                    h5 Alisia SiOriPraid
+                                    a(href='#') Смотреть профиль
+
+                .col-12.mt-3.col-xl-6
+                    .parent-outer
+                        .row.d-flex.flex-column.flex-sm-column.flex-md-row.flex-xl-row
+                            .col-12.col-sm-12.col-md-5.col-xl-5
+                                .parent-cat-img
+                                    img(src='img/card-cats/cats.jpg')
+                            .col-12.col-sm-7.col-md-7.col-xl-7
+                                .parent-cat-info
+                                    h5 Папа
+                                    h5 Viktor Gift Of Kings

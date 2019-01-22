@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     preloader();//Fade preloader when page loaded
     $('.carousel').carousel({
-        interval: false,
+        interval: 2000,
         touch: true
     })
 
