@@ -108,7 +108,8 @@ select, input, textarea {
 .cats-img,
 .propos,
 .last-write,
-.slide {
+.slide,
+.propos-mob {
   margin-left: 250px;
   padding: 0 90px; }
 
@@ -117,7 +118,8 @@ select, input, textarea {
   .cats-img,
   .propos,
   .last-write,
-  .slide {
+  .slide,
+  .propos-mob {
     margin-left: 0; } }
 
 @media (max-width: 480px) {
@@ -125,7 +127,8 @@ select, input, textarea {
   .cats-img,
   .propos,
   .last-write,
-  .slide {
+  .slide,
+  .propos-mob {
     padding: 0;
     width: 100%; } }
 
@@ -149,6 +152,9 @@ select, input, textarea {
     right: -12px;
     width: 32px;
     height: 32px; }
+
+.carousel-indicators.custom-dotten {
+  boottom: 70px; }
 
 .breadcrumb-main,
 .title-page,
