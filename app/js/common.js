@@ -7,7 +7,6 @@ $( document ).ready(function() {
 
     clickButtonMenu();
     lazyScroll($('.btn-up-1'),500);
-
     //initPhotoSwape();
 
 
