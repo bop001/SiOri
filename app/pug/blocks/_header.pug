@@ -1,13 +1,15 @@
-nav.navbar.navbar-expand-md.navbar-expand-lg.navbar-light.flex-column.navbar-custom.position-fixed
+nav.navbar.navbar-expand-md.navbar-expand-lg.navbar-light.flex-column.navbar-custom.position-fixed.p-0
     a.navbar-brand.m-0.p-0(href='#')
+        .sidebar-header-mob.d-md-none.w-100
+            img(src='img/logo-s.svg')
         .sidebar-header.d-none.d-md-block
            img(src='img/logo-s.svg')
     button.navbar-toggler.align-self-start(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
         span.navbar-toggler-icon
-    #navbarSupportedContent.collapse.navbar-collapse.align-items-start.flex-wrap
-        ul.navbar-nav.d-flex.justify-content-center.flex-column
+    #navbarSupportedContent.collapse.navbar-collapse.align-items-start.flex-wrap.w-100
+        ul.navbar-nav.d-flex.justify-content-center.flex-column.pl-3
             li.nav-item.position-relative
-                a.nav-link.text-white(href='#') Предложения
+                a.nav-link.text-black.pr-3(href='#') Предложения
                     span.cirle.position-relative 5
                 ul.active.justify-content-center.flex-column.sub-menu.position-absolute
                     li.nav-item.active
@@ -17,9 +19,9 @@ nav.navbar.navbar-expand-md.navbar-expand-lg.navbar-light.flex-column.navbar-cus
                     li.nav-item
                         a.nav-link.text-black(href='#') Кошки
             li.nav-item
-                a.nav-link.text-white(href='#') Коты
+                a.nav-link.text-black(href='#') Коты
             li.nav-item
-                a.nav-link.text-white(href='#') Кошки
+                a.nav-link.text-black(href='#') Кошки
                 ul.active.justify-content-center.flex-column.sub-menu.position-absolute
                     li.nav-item.active
                         a.nav-link.text-black(href='#') Предложения
@@ -28,22 +30,22 @@ nav.navbar.navbar-expand-md.navbar-expand-lg.navbar-light.flex-column.navbar-cus
                     li.nav-item
                         a.nav-link.text-black(href='#') Кошки
             li.nav-item
-                a.nav-link.text-white(href='#') Выпускники
+                a.nav-link.text-black(href='#') Выпускники
             li.nav-item
-                a.nav-link.text-white(href='#') О природе
+                a.nav-link.text-black(href='#') О природе
             li.nav-item
-                a.nav-link.text-white(href='#') Фото
+                a.nav-link.text-black(href='#') Фото
             li.nav-item
-                a.nav-link.text-white(href='#') Блог
+                a.nav-link.text-black(href='#') Блог
             li.nav-item
-                a.nav-link.text-white(href='#') Контакты
-            .socials.d-flex.justify-content-center.mt-sm-3.mt-md-2.mt-xl-5
-                a(href='#')
-                    i.fab.fa-facebook-f
-                a(href='#')
-                    i.fab.fa-vk
-                a(href='#')
-                    i.fab.fa-instagram
+                a.nav-link.text-black(href='#') Контакты
+        .socials.w-100.d-flex.justify-content-center.p-3.mb-3
+            a(href='#')
+                i.fab.fa-facebook-f
+            a(href='#')
+                i.fab.fa-vk
+            a(href='#')
+                i.fab.fa-instagram
 
 
 

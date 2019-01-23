@@ -6,26 +6,33 @@
   height: 100vh
   width: 100%
   max-width: 250px
-  background-color: rgba(0, 0, 0, 0.7)
   transition: 0.3s
+  border-right: 1px solid #000
 
   @include media(767)
     background-color: transparent
+    border-right: 1px solid transparent
+    max-width: none
+    position: static!important
+    height: auto
+
 
 .navbar-custom.active
+
   @include media(767)
-    background-color: rgba(0, 0, 0, 0.7)
+    //background-color: rgba(0, 0, 0, 0.7)
 
 
 .sub-menu
   background-color: #f6f6f6
   width: 200px
   height: auto
-  top: -150%
-  left: 126%
+  top: -130%
+  left: 137%
   transition: 0.5s
   display: none
   padding: 15px
+  border: 1px solid #000
 
   @include media(767)
     top: 0
@@ -34,23 +41,28 @@
   &:before
     content: ''
     border: 10px solid transparent
-    border-right: 10px solid #f6f6f6
+    border-right: 10px solid #000
     top: 40%
     left: -20px
     position: absolute
+
 
     @include media(767)
       top: 12px
 
 .navbar-toggler
-  margin-bottom: auto
+  margin-bottom: 20px
+  margin-left: auto
+  margin-right: 20px
 
 .nav-item
-  transition: 0.3s
+  transition: 0.5s
   cursor: pointer
 
 .nav-item:hover
   background-color: rgba(0, 0, 0, 0.3)
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.20)
+
   transform: translateX(5px)
 
 .nav-item:hover > .sub-menu
@@ -58,11 +70,37 @@
 
 .socials
   cursor: pointer
+  background-color: #0d95e8
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.20)
 
 .fab.fa-facebook-f,
 .fab.fa-vk,
 .fab.fa-instagram
   margin: 0 15px
   color: #fff
+  transition: .5s
+  font-size: 20px
+
+  &:hover
+    transform: scale(2)
 
 
+.cirle
+  margin-left: 32px
+  color: #fff
+
+  &:after
+    content: ''
+    position: absolute
+    background-color: #ff0000
+    border-radius: 50%
+    bottom: -7px
+    right: -12px
+    width: 32px
+    height: 32px
+    z-index: -1
+
+.sidebar-header-mob
+
+  img
+    width: 50%
