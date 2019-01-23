@@ -77,7 +77,7 @@ gulp.task('scripts', function(){
 
   ])
     .pipe(concat('libs.min.js'))
-    .pipe(uglify())
+      //.pipe(uglify())
     .pipe(gulp.dest('app/js'));
 });
 
