@@ -6,6 +6,8 @@ $( document ).ready(function() {
     })
 
     clickButtonMenu();
+    lazyScroll($('.btn-up-1'),500);
+
     //initPhotoSwape();
 
 
@@ -33,6 +35,21 @@ function preloader () {
 function clickButtonMenu() {
     $('.navbar-toggler').on('click', function () {
        $(this).parent().toggleClass('active');
+    });
+}
+
+function lazyScroll(anchor, speed) {
+    $(window).scroll(function(){
+        if ($(window).scrollTop() >= 450) {
+            anchor.fadeIn();
+        }else{
+            anchor.fadeOut();
+        }
+    });
+    anchor.on('click', function(e) {
+        e.preventDefault();
+        var href = $(this).attr("href");
+        $("html, body").animate({scrollTop:$(href).offset().top}, speed);
     });
 }
 
