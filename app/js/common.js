@@ -6,7 +6,7 @@ $( document ).ready(function() {
     })
 
     clickButtonMenu();
-    initPhotoSwape();
+    //initPhotoSwape();
 
 
 });
@@ -37,57 +37,57 @@ function clickButtonMenu() {
 }
 
 
-function initPhotoSwape() {
-    $('.cats-images-item').on('click', function(){
-        var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
-        gallery.init();
-    });
-}
-
-
-var pswpElement = document.querySelectorAll('.pswp')[0];
-
-// build items array
-var items = [
-    {
-        src: 'img/card-cats/cats.jpg',
-        w: 600,
-        h: 400
-    },
-    {
-        src: 'img/card-cats/cats_m.jpg',
-        w: 600,
-        h: 400
-    },
-    {
-        src: 'img/card-cats/litl.jpg',
-        w: 600,
-        h: 400
-    },
-    {
-        src: 'img/card-cats/litl2.jpg',
-        w: 600,
-        h: 400
-    },
-    {
-        src: 'img/card-cats/vipusk.jpg',
-        w: 600,
-        h: 400
-    },
-    {
-        src: 'img/card-cats/cats.jpg',
-        w: 600,
-        h: 400
-    }
-
-
-
-
-];
-
-// define options (if needed)
-var options = {
-    // optionName: 'option value'
-    // for example:
-    index: 0 // start at first slide
-};
+// function initPhotoSwape() {
+//     $('.cats-images-item, .img-item').on('click', function(){
+//         var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+//         gallery.init();
+//     });
+// }
+//
+//
+// var pswpElement = document.querySelectorAll('.pswp')[0];
+//
+// // build items array
+// var items = [
+//     {
+//         src: 'img/card-cats/cats.jpg',
+//         w: 600,
+//         h: 400
+//     },
+//     {
+//         src: 'img/card-cats/cats_m.jpg',
+//         w: 600,
+//         h: 400
+//     },
+//     {
+//         src: 'img/card-cats/litl.jpg',
+//         w: 600,
+//         h: 400
+//     },
+//     {
+//         src: 'img/card-cats/litl2.jpg',
+//         w: 600,
+//         h: 400
+//     },
+//     {
+//         src: 'img/card-cats/vipusk.jpg',
+//         w: 600,
+//         h: 400
+//     },
+//     {
+//         src: 'img/card-cats/cats.jpg',
+//         w: 600,
+//         h: 400
+//     }
+//
+//
+//
+//
+// ];
+//
+// // define options (if needed)
+// var options = {
+//     // optionName: 'option value'
+//     // for example:
+//     index: 0 // start at first slide
+// };

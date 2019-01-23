@@ -137,7 +137,7 @@ select, input, textarea {
   bottom: 0;
   left: 0;
   padding: 5px;
-  border: 1px solid #fff; }
+  background: #33383E; }
   .title-img h5 {
     color: #fff; }
 
@@ -145,7 +145,15 @@ select, input, textarea {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  cursor: pointer; }
+  cursor: pointer;
+  border: 0.3px solid rgba(238, 238, 238, 0.7); }
+
+.title-main {
+  padding: 15px;
+  font-size: 1rem; }
+
+.price-cat {
+  padding: 0 15px 15px 15px; }
 
 .img-item:hover {
   -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
@@ -378,31 +386,22 @@ select, input, textarea {
       height: auto; } }
 
 .sub-menu {
-  background-color: #f6f6f6;
+  background-color: #fff;
   width: 200px;
   height: auto;
   top: -130%;
-  left: 137%;
+  left: 100%;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   display: none;
   padding: 15px;
-  border: 1px solid #000; }
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2); }
   @media (max-width: 767px) {
     .sub-menu {
       top: 0;
       left: 115%; } }
-  .sub-menu:before {
-    content: '';
-    border: 10px solid transparent;
-    border-right: 10px solid #000;
-    top: 40%;
-    left: -20px;
-    position: absolute; }
-    @media (max-width: 767px) {
-      .sub-menu:before {
-        top: 12px; } }
 
 .navbar-toggler {
   margin-bottom: 20px;
@@ -410,25 +409,28 @@ select, input, textarea {
   margin-right: 20px; }
 
 .nav-item {
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
   cursor: pointer; }
 
 .nav-item:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #33383E;
   -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
-  -webkit-transform: translateX(5px);
-      -ms-transform: translateX(5px);
-          transform: translateX(5px); }
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2); }
+
+.nav-item:hover .nav-link.main {
+  color: #fff;
+  -webkit-transform: translateY(5px);
+      -ms-transform: translateY(5px);
+          transform: translateY(5px); }
 
 .nav-item:hover > .sub-menu {
   display: block; }
 
 .socials {
   cursor: pointer;
-  background-color: #0d95e8;
+  background-color: #33383E;
   -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2); }
 

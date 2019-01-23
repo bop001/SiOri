@@ -24,31 +24,32 @@
 
 
 .sub-menu
-  background-color: #f6f6f6
+  background-color: #fff
   width: 200px
   height: auto
   top: -130%
-  left: 137%
+  left: 100%
   transition: 0.5s
   display: none
   padding: 15px
-  border: 1px solid #000
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.20)
 
   @include media(767)
     top: 0
     left: 115%
 
-  &:before
-    content: ''
-    border: 10px solid transparent
-    border-right: 10px solid #000
-    top: 40%
-    left: -20px
-    position: absolute
+  //&:before
+  //  content: ''
+  //  border: 10px solid transparent
+  //  border-right: 10px solid #000
+  //  top: 40%
+  //  left: -20px
+  //  position: absolute
+  //
+  //
+  //  @include media(767)
+  //    top: 12px
 
-
-    @include media(767)
-      top: 12px
 
 .navbar-toggler
   margin-bottom: 20px
@@ -56,21 +57,23 @@
   margin-right: 20px
 
 .nav-item
-  transition: 0.5s
+  transition: 0.3s
   cursor: pointer
 
 .nav-item:hover
-  background-color: rgba(0, 0, 0, 0.3)
+  background-color: #33383E
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.20)
 
-  transform: translateX(5px)
+.nav-item:hover .nav-link.main
+  color: #fff
+  transform: translateY(5px)
 
 .nav-item:hover > .sub-menu
   display: block
 
 .socials
   cursor: pointer
-  background-color: #0d95e8
+  background-color: #33383E
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.20)
 
 .fab.fa-facebook-f,
