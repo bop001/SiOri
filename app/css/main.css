@@ -180,6 +180,15 @@ select, input, textarea {
       -ms-transform: translateY(-15px);
           transform: translateY(-15px); }
 
+.breadcrumb.new {
+  margin-bottom: 0; }
+
+.title-page {
+  margin-top: 0; }
+  @media (max-width: 767px) {
+    .title-page {
+      margin-top: 55px; } }
+
 .breadcrumb-main,
 .card-cats,
 .cats-images,
@@ -196,8 +205,14 @@ select, input, textarea {
     .award {
       margin-left: 0; } }
 
-ol .breadcrumb {
+.breadcrumb.new {
   margin-bottom: 0; }
+
+.title-page {
+  margin-top: 0; }
+  @media (max-width: 767px) {
+    .title-page {
+      margin-top: 55px; } }
 
 @media (max-width: 767px) {
   .container {
@@ -211,14 +226,33 @@ ol .breadcrumb {
   content: '.';
   color: #000; }
 
+.cats-images-item {
+  cursor: pointer;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+  .cats-images-item:hover {
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -moz-transform: translateY(-10px); }
+
 .galary {
   margin-left: 250px; }
   @media (max-width: 767px) {
     .galary {
       margin-left: 0; } }
 
-ol .breadcrumb {
-  margin-bottom: 0 !important; }
+.breadcrumb.new {
+  margin-bottom: 0; }
+
+.title-page {
+  margin-top: 0; }
+  @media (max-width: 767px) {
+    .title-page {
+      margin-top: 55px; } }
 
 .carousel.slide {
   margin: 0;
@@ -231,8 +265,23 @@ ol .breadcrumb {
   margin: 4px;
   font-size: 20px; }
 
-ol .breadcrumb {
-  margin-bottom: 0 !important; }
+.breadcrumb.new {
+  margin-bottom: 0; }
+
+.title-page {
+  margin-top: 0; }
+  @media (max-width: 767px) {
+    .title-page {
+      margin-top: 55px; } }
+
+.breadcrumb.new {
+  margin-bottom: 0; }
+
+.title-page {
+  margin-top: 0; }
+  @media (max-width: 767px) {
+    .title-page {
+      margin-top: 55px; } }
 
 .text-page,
 .title-page {
@@ -241,6 +290,15 @@ ol .breadcrumb {
     .text-page,
     .title-page {
       margin-left: 0; } }
+
+.breadcrumb.new {
+  margin-bottom: 0; }
+
+.title-page {
+  margin-top: 0; }
+  @media (max-width: 767px) {
+    .title-page {
+      margin-top: 55px; } }
 
 .breadcrumb-main {
   background: #eee;
@@ -252,10 +310,15 @@ ol .breadcrumb {
   background-position: center bottom;
   -webkit-background-size: cover;
           background-size: cover;
-  height: 350px; }
+  height: 350px;
+  color: #fff;
+  margin-top: 0; }
+  @media (max-width: 767px) {
+    .title-page {
+      margin-top: 55px; } }
 
-.title-page {
-  color: #fff; }
+.breadcrumb.new {
+  margin-bottom: 0; }
 
 .contact-form {
   margin-left: 250px; }
@@ -272,6 +335,12 @@ ol .breadcrumb {
 .custom {
   border: 1px solid #000;
   padding: 16px; }
+
+.title-page {
+  margin-top: 0; }
+  @media (max-width: 767px) {
+    .title-page {
+      margin-top: 55px; } }
 
 .footer {
   border: 1px solid #000;

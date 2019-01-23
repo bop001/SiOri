@@ -9,10 +9,14 @@
   @include media(767)
     margin-left: 0
 
-ol
+.breadcrumb.new
+  margin-bottom: 0
 
-  .breadcrumb
-    margin-bottom: 0
+.title-page
+  margin-top: 0
+
+  @include media(767)
+    margin-top: 55px
 
 .container
 
@@ -28,5 +32,16 @@ ol
   &:before
     content: '.'
     color: #000
+
+.cats-images-item
+  cursor: pointer
+  transition: .3s
+
+  &:hover
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.20)
+    transform: translateY(-10px)
+    -webkit-transform: translateY(-10px)
+    -ms-transform: translateY(-10px)
+    -moz-transform: translateY(-10px)
 
 
