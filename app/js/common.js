@@ -40,7 +40,7 @@ function clickButtonMenu() {
 
 function lazyScroll(anchor, speed) {
     $(window).scroll(function(){
-        if ($(window).scrollTop() >= 450) {
+        if ($(window).scrollTop() >= 650) {
             anchor.fadeIn();
         }else{
             anchor.fadeOut();
