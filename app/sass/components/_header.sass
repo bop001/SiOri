@@ -20,7 +20,7 @@
 .navbar-custom.active
 
   @include media(767)
-    //background-color: rgba(0, 0, 0, 0.7)
+//background-color: rgba(0, 0, 0, 0.7)
 
 
 .sub-menu
@@ -38,23 +38,22 @@
     top: 0
     left: 115%
 
-  //&:before
-  //  content: ''
-  //  border: 10px solid transparent
-  //  border-right: 10px solid #000
-  //  top: 40%
-  //  left: -20px
-  //  position: absolute
-  //
-  //
-  //  @include media(767)
-  //    top: 12px
+//&:before
+//  content: ''
+//  border: 10px solid transparent
+//  border-right: 10px solid #000
+//  top: 40%
+//  left: -20px
+//  position: absolute
+//
+//
+//  @include media(767)
+//    top: 12px
 
 
 .navbar-toggler
-  margin-left: auto
+  margin-left: 10px
   margin-top: 17px
-  margin-right: 10px
 
 .nav-item
   transition: 0.3s
@@ -75,6 +74,14 @@
   cursor: pointer
   background-color: #33383E
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.20)
+  
+  @include media(767)
+    display: none
+
+.navigation-custom
+
+  @include media(767)
+    display: none
 
 .fab.fa-facebook-f,
 .fab.fa-vk,
@@ -89,7 +96,7 @@
 
 
 .cirle
-  margin-left: 32px
+  margin-left: 16px
   color: #fff
 
   &:after
@@ -104,6 +111,41 @@
     z-index: -1
 
 .sidebar-header-mob
+  margin-left: auto
 
   img
     width: 90px
+    
+.hamburger
+  margin: auto 0
+  display: none
+
+  @include media(767)
+    display: block
+
+.top-menu
+
+  @include media(767)
+    height: 90px
+
+.logo-company
+
+  @include media(767)
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    position: fixed
+    background: #fff
+    z-index: 1000
+
+.logo-company__img
+
+  @include media(767)
+    width: 110px
+    margin-right: 1rem
+
+.logo-company__link
+
+  @include media(767)
+    order: 2

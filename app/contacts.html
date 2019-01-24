@@ -39,13 +39,17 @@
     </div>
     <div class="content-wrapper" id="contentWrapper">
       <div class="page-wrapper" id="pageWrapper">
-        <nav class="navbar navbar-expand-md navbar-expand-lg navbar-light flex-column navbar-custom position-fixed p-0"><a class="navbar-brand m-0 p-0" href="#">
-            <div class="sidebar-header d-none d-md-block"><img src="img/logo-s.svg"></div></a>
-          <div class="mobile-container w-100 d-flex pl-2 pr-2">
-            <button class="navbar-toggler align-self-start order-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="sidebar-header-mob d-md-none order-1"><img src="img/logo-s.svg"></div>
+        <div class="navbar-custom position-fixed p-0">
+          <div class="top-menu">
+            <div class="logo-company"><a class="logo-company__link m-0 p-0" href="#"><img class="logo-company__img" src="img/logo-s.svg"></a>
+              <div class="hamburger hamburger--squeeze logo-company__btn" id="humburger">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="collapse navbar-collapse align-items-start flex-wrap w-100" id="navbarSupportedContent">
+          <nav class="navigation-custom" id="mmenu-custom">
             <ul class="navbar-nav d-flex justify-content-center flex-column w-100 pl-3">
               <li class="nav-item position-relative"><a class="nav-link main text-black" href="#">Предложения<span class="cirle position-relative">5</span></a>
                 <ul class="active justify-content-center flex-column sub-menu position-absolute">
@@ -68,9 +72,9 @@
               <li class="nav-item"><a class="nav-link main text-black" href="#">Блог</a></li>
               <li class="nav-item"><a class="nav-link main text-black" href="#">Контакты</a></li>
             </ul>
-            <div class="socials w-100 d-flex justify-content-start p-3 mb-3"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-vk"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div>
-          </div>
-        </nav>
+          </nav>
+          <div class="socials w-100 justify-content-start p-3 mb-3"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-vk"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div>
+        </div>
         <section class="title-page mb-3">
           <div class="container">
             <div class="row">

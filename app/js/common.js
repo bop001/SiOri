@@ -8,7 +8,25 @@ $( document ).ready(function() {
     clickButtonMenu();
     lazyScroll($('.btn-up-1'),500);
     initPhotoSwape();
+    $('#mmenu-custom').mmenu({
+        extensions:['theme-white'],
+        offCanvas: {
+            position  : 'left'
+        }
+    },{
+        clone: true
+    });
+    var API = $('#mm-mmenu-custom').data('mmenu');
 
+    $('#humburger').click(function () {
+        API.open();
+    })
+    API.bind('open:finish', function () {
+        console.log('111')
+        $('.hamburger').addClass('is-active');
+    }).bind('close:finish', function () {
+        $('.hamburger').removeClass('is-active');
+    });
 
 });
 
@@ -57,6 +75,7 @@ function initPhotoSwape() {
         gallery.init();
      });
  }
+
 
 
 var pswpElement = document.querySelectorAll('.pswp')[0];

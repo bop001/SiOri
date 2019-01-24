@@ -386,9 +386,8 @@ select, input, textarea {
       left: 115%; } }
 
 .navbar-toggler {
-  margin-left: auto;
-  margin-top: 17px;
-  margin-right: 10px; }
+  margin-left: 10px;
+  margin-top: 17px; }
 
 .nav-item {
   -webkit-transition: 0.3s;
@@ -415,6 +414,13 @@ select, input, textarea {
   background-color: #33383E;
   -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2); }
+  @media (max-width: 767px) {
+    .socials {
+      display: none; } }
+
+@media (max-width: 767px) {
+  .navigation-custom {
+    display: none; } }
 
 .fab.fa-facebook-f,
 .fab.fa-vk,
@@ -433,7 +439,7 @@ select, input, textarea {
             transform: scale(2); }
 
 .cirle {
-  margin-left: 32px;
+  margin-left: 16px;
   color: #fff; }
   .cirle:after {
     content: '';
@@ -447,8 +453,53 @@ select, input, textarea {
     height: 32px;
     z-index: -1; }
 
-.sidebar-header-mob img {
-  width: 90px; }
+.sidebar-header-mob {
+  margin-left: auto; }
+  .sidebar-header-mob img {
+    width: 90px; }
+
+.hamburger {
+  margin: auto 0;
+  display: none; }
+  @media (max-width: 767px) {
+    .hamburger {
+      display: block; } }
+
+@media (max-width: 767px) {
+  .top-menu {
+    height: 90px; } }
+
+@media (max-width: 767px) {
+  .logo-company {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: fixed;
+    background: #fff;
+    z-index: 1000; } }
+
+@media (max-width: 767px) {
+  .logo-company__img {
+    width: 110px;
+    margin-right: 1rem; } }
+
+@media (max-width: 767px) {
+  .logo-company__link {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2; } }
 
 html, body {
   width: 100%;
