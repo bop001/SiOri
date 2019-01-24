@@ -368,10 +368,10 @@ select, input, textarea {
 
 .sub-menu {
   background-color: #fff;
-  width: 200px;
+  width: 250px;
   height: auto;
   top: -130%;
-  left: 100%;
+  left: 115%;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -392,18 +392,24 @@ select, input, textarea {
   -webkit-transition: .5s;
   -o-transition: .5s;
   transition: .5s;
-  cursor: pointer; }
+  cursor: pointer;
+  width: 200px;
+  margin: auto; }
   .nav-item:hover {
-    background-color: #33383E;
-    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
-            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2); }
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transform: translateX(5px);
+        -ms-transform: translateX(5px);
+            transform: translateX(5px); }
   .nav-item:hover > .nav-link {
-    color: #fff;
-    -webkit-transform: translateY(5px);
-        -ms-transform: translateY(5px);
-            transform: translateY(5px); }
+    color: #fff; }
   .nav-item:hover > .sub-menu {
     display: block; }
+
+.sub {
+  margin: 0; }
 
 .socials {
   margin-top: auto; }

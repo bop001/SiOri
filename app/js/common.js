@@ -59,19 +59,11 @@ function mmenuToggle(menu, icon){
     });
 }
 
-
-
 function preloader () {
     $(window).on('load', function () {
         $('.loader-outer').fadeOut();
     });
 }
-//
-// function clickButtonMenu() {
-//     $('.navbar-toggler').on('click', function () {
-//        $(this).parent().toggleClass('active');
-//     });
-// }
 
 function lazyScroll(anchor, speed) {
     $(window).scroll(function(){
@@ -138,4 +130,10 @@ var pswpElement = document.querySelectorAll('.pswp')[0];
      // for example:
      index: 0 // start at first slide
  };
+
+$('.slick-slider').slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false
+});
 
