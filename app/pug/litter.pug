@@ -1,17 +1,18 @@
 extends blocks/_layout
 
 append content
-    section.breadcrumb-main.breadcrumb-dark
-        nav(aria-label='breadcrumb')
-            ol.breadcrumb.new
-                li.breadcrumb-item
-                    a(href='#') Главная
-                li.breadcrumb-item.active(aria-current='cats') Литтер
-    section.title-page.mb-3
-        .container
-            .row
-                .col-12
-                    h1 Литтер
+    header
+        .breadcrumb-main.breadcrumb-dark
+            nav(aria-label='breadcrumb')
+                ol.breadcrumb.new
+                    li.breadcrumb-item
+                        a(href='#') Главная
+                    li.breadcrumb-item.active(aria-current='litter') Литтер
+        .title-page.mb-3
+            .container
+                .row
+                    .col-12
+                        h1 Литтер
     section.parents.mt-5
         .container
             .row
@@ -23,8 +24,8 @@ append content
                                     img(src='img/card-cats/cats.jpg')
                             .col-12.col-sm-7.col-md-7.col-xl-7
                                 .parent-cat-info
-                                    h5 Мама
-                                    h5 Alisia SiOriPraid
+                                    div Мама
+                                    div Alisia SiOriPraid
                                     a(href='#') Смотреть профиль
 
                 .col-12.mt-3.col-xl-6
@@ -35,8 +36,8 @@ append content
                                     img(src='img/card-cats/cats.jpg')
                             .col-12.col-sm-7.col-md-7.col-xl-7
                                 .parent-cat-info
-                                    h5 Папа
-                                    h5 Viktor Gift Of Kings
+                                    div Папа
+                                    div Viktor Gift Of Kings
     section.galary.mt-3
         .container
             .row
@@ -113,7 +114,7 @@ append content
                             span.sr-only Next
                 .col
                     .galary-info.mt-3
-                        h4.mb-3 Hermes SiOri Praid
+                        .mb-3 Hermes SiOri Praid
                         ul
                             li Пол:
                                 span Male

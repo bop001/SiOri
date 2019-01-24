@@ -1,17 +1,18 @@
 extends blocks/_layout
 
 append content
-    section.breadcrumb-main.breadcrumb-dark
-        nav(aria-label='breadcrumb')
-            ol.breadcrumb.new
-                li.breadcrumb-item
-                    a(href='#') Главная
-                li.breadcrumb-item.active(aria-current='cats') Наши предложени
-    section.title-page
-        .container
-            .row
-                .col-12
-                    h1 Предложения нашего питомника
+    header
+        .breadcrumb-main.breadcrumb-dark
+            nav(aria-label='breadcrumb')
+                ol.breadcrumb.new
+                    li.breadcrumb-item
+                        a(href='#') Главная
+                    li.breadcrumb-item.active(aria-current='our-propose') Наши предложени
+        .title-page
+            .container
+                .row
+                    .col-12
+                        h1 Предложения нашего питомника
     section.propos.mt-5
         .container
             .row
@@ -21,108 +22,105 @@ append content
                         a(href='') Котята |
                         a(href='') В добрые руки
             .row
-                .col-sm-12.col-md-12.col-xl.mt-5
-                    .img-item
-                        .img-group.position-relative
-                                img(src='img/main/litl2.jpg')
-                            .title-img.position-absolute
-                                h5 Котенок
-                        .title-main
-                            h5 Alisia SiOri Praid, 7мес.
-                        .price-cat
-                            h4 20000
-                                i.fas.fa-ruble-sign
-                .col-sm-12.col-md-12.col-xl.mt-5
-                    .img-item
-                        .img-group.position-relative
-                                img(src='img/main/litl2.jpg')
-                            .title-img.position-absolute
-                                h5 Добрые руки
-                        .title-main
-                            h5 Alisia SiOri Praid, 7мес.
-                        .price-cat
-                            h4 20000
-                                i.fas.fa-ruble-sign
-                .col-sm-12.col-md-12.col-xl.mt-5
-                    .img-item
-                        .img-group.position-relative
-                                img(src='img/main/litl2.jpg')
-                            .title-img.position-absolute
-                                h5 Котенок
-                        .title-main
-                            h4 Alisia SiOri Praid, 7мес.
-                        .price-cat
-                            h3 20000
-                                i.fas.fa-ruble-sign
-            .row
-                .col-sm-12.col-md-12.col-xl.mt-5
-                    .img-item
-                        .img-group.position-relative
-                                img(src='img/main/litl2.jpg')
-                            .title-img.position-absolute
-                                h5 Котенок
-                        .title-main
-                            h4 Alisia SiOri Praid, 7мес.
-                        .price-cat
-                            h3 20000
-                                i.fas.fa-ruble-sign
-                .col-sm-12.col-md-12.col-xl.mt-5
-                    .img-item
-                        .img-group.position-relative
-                                img(src='img/main/litl2.jpg')
-                            .title-img.position-absolute
-                                h5 Добрые руки
-                        .title-main
-                            h4 Alisia SiOri Praid, 7мес.
-                        .price-cat
-                            h3 20000
-                                i.fas.fa-ruble-sign
-                .col-sm-12.col-md-12.col-xl.mt-5
-                    .img-item
-                        .img-group.position-relative
-                                img(src='img/main/litl2.jpg')
-                            .title-img.position-absolute
-                                h5 Котенок
-                        .title-main
-                            h4 Alisia SiOri Praid, 7мес.
-                        .price-cat
-                            h3 20000
-                                i.fas.fa-ruble-sign
-
-            .row
-                .col-sm-12.col-md-12.col-xl.mt-5
+                .col-sm-12.col-md-12.col-lg-4.mt-5
                     .img-item
                         .img-group.position-relative
                             img(src='img/main/litl2.jpg')
                             .title-img.position-absolute
-                                h5 Котенок
+                                div Котенок
                         .title-main
-                            h5 Alisia SiOri Praid, 7мес.
+                            div Alisia SiOri Praid, 7мес.
                         .price-cat
-                            h4 20000
+                            div 20000
+                                i.fas.fa-ruble-sign
+                .col-sm-12.col-md-12.col-lg-4.mt-5
+                    .img-item
+                        .img-group.position-relative
+                            img(src='img/main/litl2.jpg')
+                            .title-img.position-absolute
+                                div Добрые руки
+                        .title-main
+                            div Alisia SiOri Praid, 7мес.
+                        .price-cat
+                            div 20000
+                                i.fas.fa-ruble-sign
+                .col-sm-12.col-md-12.col-lg-4.mt-5
+                    .img-item
+                        .img-group.position-relative
+                            img(src='img/main/litl2.jpg')
+                            .title-img.position-absolute
+                                div Котенок
+                        .title-main
+                            div Alisia SiOri Praid, 7мес.
+                        .price-cat
+                            div 20000
+                                i.fas.fa-ruble-sign
+                .col-sm-12.col-md-12.col-lg-4.mt-5
+                    .img-item
+                        .img-group.position-relative
+                            img(src='img/main/litl2.jpg')
+                            .title-img.position-absolute
+                                div Котенок
+                        .title-main
+                            div Alisia SiOri Praid, 7мес.
+                        .price-cat
+                            div 20000
                                 i.fas.fa-ruble-sign
                 .col-sm-12.col-md-12.col-xl.mt-5
                     .img-item
                         .img-group.position-relative
                             img(src='img/main/litl2.jpg')
                             .title-img.position-absolute
-                                h5 Добрые руки
+                                div Добрые руки
                         .title-main
-                            h5 Alisia SiOri Praid, 7мес.
+                            div Alisia SiOri Praid, 7мес.
                         .price-cat
-                            h3 20000
+                            div 20000
                                 i.fas.fa-ruble-sign
-                .col-sm-12.col-md-12.col-xl.mt-5
+                .col-sm-12.col-md-12.col-lg-4.mt-5
                     .img-item
                         .img-group.position-relative
                             img(src='img/main/litl2.jpg')
                             .title-img.position-absolute
-                                h5 Котенок
+                                div Котенок
                         .title-main
-                            h4 Alisia SiOri Praid, 7мес.
+                            div Alisia SiOri Praid, 7мес.
                         .price-cat
-                            h3 20000
+                        div20000
+                                i.fas.fa-ruble-sign
+                .col-sm-12.col-md-12.col-lg-4.mt-5
+                    .img-item
+                        .img-group.position-relative
+                            img(src='img/main/litl2.jpg')
+                            .title-img.position-absolute
+                                div Котенок
+                        .title-main
+                            div Alisia SiOri Praid, 7мес.
+                        .price-cat
+                            div 20000
+                                i.fas.fa-ruble-sign
+                .col-sm-12.col-md-12.col-lg-4.mt-5
+                    .img-item
+                        .img-group.position-relative
+                            img(src='img/main/litl2.jpg')
+                            .title-img.position-absolute
+                                div Добрые руки
+                        .title-main
+                            div Alisia SiOri Praid, 7мес.
+                        .price-cat
+                            div 20000
+                                i.fas.fa-ruble-sign
+                .col-sm-12.col-md-12.col-lg-4.mt-5
+                    .img-item
+                        .img-group.position-relative
+                            img(src='img/main/litl2.jpg')
+                            .title-img.position-absolute
+                                div Котенок
+                        .title-main
+                            div Alisia SiOri Praid, 7мес.
+                        .price-cat
+                            div 20000
                                 i.fas.fa-ruble-sign
             .row.mt-3
                 .col-12.d-flex.justify-content-center
-                    h2 Загрузка....
+                    div Загрузка....

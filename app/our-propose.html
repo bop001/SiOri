@@ -39,13 +39,51 @@
     </div>
     <div class="content-wrapper" id="contentWrapper">
       <div class="page-wrapper" id="pageWrapper">
-        <nav class="navbar navbar-expand-md navbar-expand-lg navbar-light flex-column navbar-custom position-fixed p-0"><a class="navbar-brand m-0 p-0" href="#">
-            <div class="sidebar-header d-none d-md-block"><img src="img/logo-s.svg"></div></a>
-          <div class="mobile-container w-100 d-flex pl-2 pr-2">
-            <button class="navbar-toggler align-self-start order-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="sidebar-header-mob d-md-none order-1"><img src="img/logo-s.svg"></div>
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="pswp__bg"></div>
+          <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+              <div class="pswp__item"></div>
+              <div class="pswp__item"></div>
+              <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+              <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <div class="pswp__preloader">
+                  <div class="pswp__preloader__icn">
+                    <div class="pswp__preloader__cut">
+                      <div class="pswp__preloader__donut"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+              </div>
+              <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+              <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+              <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+              </div>
+            </div>
           </div>
-          <div class="collapse navbar-collapse align-items-start flex-wrap w-100" id="navbarSupportedContent">
+        </div>
+        <div class="navbar-custom position-fixed p-0">
+          <div class="top-menu">
+            <div class="logo-company"><a class="logo-company__link m-0 p-0" href="#"><img class="logo-company__img" src="img/logo-s.svg"></a>
+              <div class="hamburger hamburger--squeeze logo-company__btn" id="humburger">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="navigation-custom" id="mmenu-custom">
             <ul class="navbar-nav d-flex justify-content-center flex-column w-100 pl-3">
               <li class="nav-item position-relative"><a class="nav-link main text-black" href="#">Предложения<span class="cirle position-relative">5</span></a>
                 <ul class="active justify-content-center flex-column sub-menu position-absolute">
@@ -68,26 +106,28 @@
               <li class="nav-item"><a class="nav-link main text-black" href="#">Блог</a></li>
               <li class="nav-item"><a class="nav-link main text-black" href="#">Контакты</a></li>
             </ul>
-            <div class="socials w-100 d-flex justify-content-start p-3 mb-3"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-vk"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div>
-          </div>
-        </nav>
-        <section class="breadcrumb-main breadcrumb-dark">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb new">
-              <li class="breadcrumb-item"><a href="#">Главная</a></li>
-              <li class="breadcrumb-item active" aria-current="cats">Наши предложени</li>
-            </ol>
           </nav>
-        </section>
-        <section class="title-page">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <h1>Предложения нашего питомника</h1>
+          <div class="socials w-100 justify-content-start p-3 mb-3"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-vk"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div>
+        </div>
+        <header>
+          <div class="breadcrumb-main breadcrumb-dark">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb new">
+                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="our-propose">Наши предложени</li>
+              </ol>
+            </nav>
+          </div>
+          <div class="title-page">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <h1>Предложения нашего питомника</h1>
+                </div>
               </div>
             </div>
           </div>
-        </section>
+        </header>
         <section class="propos mt-5">
           <div class="container">
             <div class="row">
@@ -96,112 +136,63 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-sm-12 col-md-12 col-xl mt-5">
-                <div class="img-item">
-                  <div class="img-group position-relative"><a href="img/main/litl2.jpg" data-fancybox="cats-litle"><img src="img/main/litl2.jpg"></a>
-                    <div class="title-img position-absolute">
-                      <h5>Котенок</h5>
-                    </div>
-                  </div>
-                  <div class="title-main">
-                    <h5>Alisia SiOri Praid, 7мес.</h5>
-                  </div>
-                  <div class="price-cat">
-                    <h4>20000<i class="fas fa-ruble-sign"></i></h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-12 col-xl mt-5">
-                <div class="img-item">
-                  <div class="img-group position-relative"><a href="img/main/litl2.jpg" data-fancybox="good-hands"><img src="img/main/litl2.jpg"></a>
-                    <div class="title-img position-absolute">
-                      <h5>Добрые руки</h5>
-                    </div>
-                  </div>
-                  <div class="title-main">
-                    <h5>Alisia SiOri Praid, 7мес.</h5>
-                  </div>
-                  <div class="price-cat">
-                    <h4>20000<i class="fas fa-ruble-sign"></i></h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-12 col-xl mt-5">
-                <div class="img-item">
-                  <div class="img-group position-relative"><a href="img/main/litl2.jpg" data-fancybox="cats-litle"><img src="img/main/litl2.jpg"></a>
-                    <div class="title-img position-absolute">
-                      <h5>Котенок</h5>
-                    </div>
-                  </div>
-                  <div class="title-main">
-                    <h4>Alisia SiOri Praid, 7мес.</h4>
-                  </div>
-                  <div class="price-cat">
-                    <h3>20000<i class="fas fa-ruble-sign"></i></h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12 col-md-12 col-xl mt-5">
-                <div class="img-item">
-                  <div class="img-group position-relative"><a href="img/main/litl2.jpg" data-fancybox="cats-litle"><img src="img/main/litl2.jpg"></a>
-                    <div class="title-img position-absolute">
-                      <h5>Котенок</h5>
-                    </div>
-                  </div>
-                  <div class="title-main">
-                    <h4>Alisia SiOri Praid, 7мес.</h4>
-                  </div>
-                  <div class="price-cat">
-                    <h3>20000<i class="fas fa-ruble-sign"></i></h3>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-12 col-xl mt-5">
-                <div class="img-item">
-                  <div class="img-group position-relative"><a href="img/main/litl2.jpg" data-fancybox="good-hands"><img src="img/main/litl2.jpg"></a>
-                    <div class="title-img position-absolute">
-                      <h5>Добрые руки</h5>
-                    </div>
-                  </div>
-                  <div class="title-main">
-                    <h4>Alisia SiOri Praid, 7мес.</h4>
-                  </div>
-                  <div class="price-cat">
-                    <h3>20000<i class="fas fa-ruble-sign"></i></h3>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-12 col-xl mt-5">
-                <div class="img-item">
-                  <div class="img-group position-relative"><a href="img/main/litl2.jpg" data-fancybox="cats-litle"><img src="img/main/litl2.jpg"></a>
-                    <div class="title-img position-absolute">
-                      <h5>Котенок</h5>
-                    </div>
-                  </div>
-                  <div class="title-main">
-                    <h4>Alisia SiOri Praid, 7мес.</h4>
-                  </div>
-                  <div class="price-cat">
-                    <h3>20000<i class="fas fa-ruble-sign"></i></h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12 col-md-12 col-xl mt-5">
+              <div class="col-sm-12 col-md-12 col-lg-4 mt-5">
                 <div class="img-item">
                   <div class="img-group position-relative"><img src="img/main/litl2.jpg">
                     <div class="title-img position-absolute">
-                      <h5>Котенок</h5>
+                      <div>Котенок</div>
                     </div>
                   </div>
                   <div class="title-main">
-                    <h5>Alisia SiOri Praid, 7мес.</h5>
+                    <div>Alisia SiOri Praid, 7мес.</div>
                   </div>
                   <div class="price-cat">
-                    <h4>20000<i class="fas fa-ruble-sign"></i></h4>
+                    <div>20000<i class="fas fa-ruble-sign"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 mt-5">
+                <div class="img-item">
+                  <div class="img-group position-relative"><img src="img/main/litl2.jpg">
+                    <div class="title-img position-absolute">
+                      <div>Добрые руки</div>
+                    </div>
+                  </div>
+                  <div class="title-main">
+                    <div>Alisia SiOri Praid, 7мес.</div>
+                  </div>
+                  <div class="price-cat">
+                    <div>20000<i class="fas fa-ruble-sign"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 mt-5">
+                <div class="img-item">
+                  <div class="img-group position-relative"><img src="img/main/litl2.jpg">
+                    <div class="title-img position-absolute">
+                      <div>Котенок</div>
+                    </div>
+                  </div>
+                  <div class="title-main">
+                    <div>Alisia SiOri Praid, 7мес.</div>
+                  </div>
+                  <div class="price-cat">
+                    <div>20000<i class="fas fa-ruble-sign"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 mt-5">
+                <div class="img-item">
+                  <div class="img-group position-relative"><img src="img/main/litl2.jpg">
+                    <div class="title-img position-absolute">
+                      <div>Котенок</div>
+                    </div>
+                  </div>
+                  <div class="title-main">
+                    <div>Alisia SiOri Praid, 7мес.</div>
+                  </div>
+                  <div class="price-cat">
+                    <div>20000<i class="fas fa-ruble-sign"></i></div>
                   </div>
                 </div>
               </div>
@@ -209,36 +200,80 @@
                 <div class="img-item">
                   <div class="img-group position-relative"><img src="img/main/litl2.jpg">
                     <div class="title-img position-absolute">
-                      <h5>Добрые руки</h5>
+                      <div>Добрые руки</div>
                     </div>
                   </div>
                   <div class="title-main">
-                    <h5>Alisia SiOri Praid, 7мес.</h5>
+                    <div>Alisia SiOri Praid, 7мес.</div>
                   </div>
                   <div class="price-cat">
-                    <h3>20000<i class="fas fa-ruble-sign"></i></h3>
+                    <div>20000<i class="fas fa-ruble-sign"></i></div>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-12 col-md-12 col-xl mt-5">
+              <div class="col-sm-12 col-md-12 col-lg-4 mt-5">
                 <div class="img-item">
                   <div class="img-group position-relative"><img src="img/main/litl2.jpg">
                     <div class="title-img position-absolute">
-                      <h5>Котенок</h5>
+                      <div>Котенок</div>
                     </div>
                   </div>
                   <div class="title-main">
-                    <h4>Alisia SiOri Praid, 7мес.</h4>
+                    <div>Alisia SiOri Praid, 7мес.</div>
+                  </div>
+                  <div class="price-cat"></div>
+                  <div20000><i class="fas fa-ruble-sign"></i></div20000>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 mt-5">
+                <div class="img-item">
+                  <div class="img-group position-relative"><img src="img/main/litl2.jpg">
+                    <div class="title-img position-absolute">
+                      <div>Котенок</div>
+                    </div>
+                  </div>
+                  <div class="title-main">
+                    <div>Alisia SiOri Praid, 7мес.</div>
                   </div>
                   <div class="price-cat">
-                    <h3>20000<i class="fas fa-ruble-sign"></i></h3>
+                    <div>20000<i class="fas fa-ruble-sign"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 mt-5">
+                <div class="img-item">
+                  <div class="img-group position-relative"><img src="img/main/litl2.jpg">
+                    <div class="title-img position-absolute">
+                      <div>Добрые руки</div>
+                    </div>
+                  </div>
+                  <div class="title-main">
+                    <div>Alisia SiOri Praid, 7мес.</div>
+                  </div>
+                  <div class="price-cat">
+                    <div>20000<i class="fas fa-ruble-sign"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 mt-5">
+                <div class="img-item">
+                  <div class="img-group position-relative"><img src="img/main/litl2.jpg">
+                    <div class="title-img position-absolute">
+                      <div>Котенок</div>
+                    </div>
+                  </div>
+                  <div class="title-main">
+                    <div>Alisia SiOri Praid, 7мес.</div>
+                  </div>
+                  <div class="price-cat">
+                    <div>20000<i class="fas fa-ruble-sign"></i></div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="row mt-3">
               <div class="col-12 d-flex justify-content-center">
-                <h2>Загрузка....</h2>
+                <div>Загрузка....</div>
               </div>
             </div>
           </div>

@@ -1,19 +1,20 @@
 extends blocks/_layout
 
 append content
-    section.breadcrumb-main.breadcrumb-dark
-        nav(aria-label='breadcrumb')
-            ol.breadcrumb.new
-                li.breadcrumb-item
-                    a(href='#') Главная
-                li.breadcrumb-item.active(aria-current='cats') Коты
+    header
+        .breadcrumb-main.breadcrumb-dark
+            nav(aria-label='breadcrumb')
+                ol.breadcrumb.new
+                    li.breadcrumb-item
+                        a(href='#') Главная
+                    li.breadcrumb-item.active(aria-current='card-cats') Коты
 
 
-    section.title-page
-        .container
-            .row
-                .col-12
-                    h1 Кот/Кличка
+        .title-page
+            .container
+                .row
+                    .col-12
+                        h1 Кот/Кличка
     section.card-cats.mt-5
         .container
             .row.flex-wrap
@@ -45,54 +46,28 @@ append content
 
     section.cats-images.mt-3.mt-md-3.mt-xl-5
         .container
-            //.row
-                .pswp(tabindex='-1', role='dialog', aria-hidden='true')
-                    .pswp__bg
-                    .pswp__scroll-wrap
-                        .pswp__container
-                            .pswp__item
-                            .pswp__item
-                            .pswp__item
-                        .pswp__ui.pswp__ui--hidden
-                            .pswp__top-bar
-                                .pswp__counter
-                                button.pswp__button.pswp__button--close(title='Close (Esc)')
-                                button.pswp__button.pswp__button--share(title='Share')
-                                button.pswp__button.pswp__button--fs(title='Toggle fullscreen')
-                                button.pswp__button.pswp__button--zoom(title='Zoom in/out')
-                                .pswp__preloader
-                                    .pswp__preloader__icn
-                                        .pswp__preloader__cut
-                                            .pswp__preloader__donut
-                            .pswp__share-modal.pswp__share-modal--hidden.pswp__single-tap
-                                .pswp__share-tooltip
-                            button.pswp__button.pswp__button--arrow--left(title='Previous (arrow left)')
-                            button.pswp__button.pswp__button--arrow--right(title='Next (arrow right)')
-                            .pswp__caption
-                                .pswp__caption__center
             .row
-                .col-12.col-sm-12.col-mf.col-xl.mt-3
+                .col-12.col-sm-12.col-mf.col-lg-4.mt-3
                     .cats-images-item
                         a(href='img/card-cats/cats.jpg' data-fancybox='cats-female')
                             img(src='img/card-cats/cats.jpg')
-                .col-12.col-sm-12.col-mf.col-xl.mt-3
+                .col-12.col-sm-12.col-mf.col-lg-4.mt-3
                     .cats-images-item
                         a(href='img/card-cats/cats_m.jpg' data-fancybox='cats-male')
                             img(src='img/card-cats/cats_m.jpg')
-                .col-12.col-sm-12.col-mf.col-xl.mt-3
+                .col-12.col-sm-12.col-mf.col-lg-4.mt-3
                     .cats-images-item
                         a(href='img/card-cats/litl.jpg' data-fancybox='cats-litle')
                             img(src='img/card-cats/litl.jpg')
-                .w-100.mt-3
-                .col-12.col-sm-12.col-mf.col-xl.mt-3
+                .col-12.col-sm-12.col-mf.col-lg-4.mt-3
                     .cats-images-item
                         a(href='img/card-cats/litl2.jpg' data-fancybox='cats-litle')
                             img(src='img/card-cats/litl2.jpg')
-                .col-12.col-sm-12.col-mf.col-xl.mt-3
+                .col-12.col-sm-12.col-mf.col-lg-4.mt-3
                     .cats-images-item
                         a(href='img/card-cats/vipusk.jpg' data-fancybox='cats-vipusk')
                             img(src='img/card-cats/vipusk.jpg')
-                .col-12.col-sm-12.col-mf.col-xl.mt-3
+                .col-12.col-sm-12.col-mf.col-lg-4.mt-3
                     .cats-images-item
                         a(href='img/card-cats/cats.jpg' data-fancybox='cats-female')
                             img(src='img/card-cats/cats.jpg')
@@ -116,8 +91,8 @@ append content
                                     img(src='img/card-cats/cats.jpg')
                             .col-12.col-sm-7.col-md-7.col-xl-7
                                 .parent-cat-info
-                                    h5 Мама
-                                    h5 Alisia SiOriPraid
+                                    div Мама
+                                    div Alisia SiOriPraid
                                     a(href='#') Смотреть профиль
 
                 .col-12.mt-3.col-xl-6
@@ -128,13 +103,13 @@ append content
                                     img(src='img/card-cats/cats.jpg')
                             .col-12.col-sm-7.col-md-7.col-xl-7
                                 .parent-cat-info
-                                    h5 Папа
-                                    h5 Viktor Gift Of Kings
+                                    div Папа
+                                    div Viktor Gift Of Kings
     section#award.award.mt-5
         .container
             .row
                 .col-12.col-sm-12.col-md-6.col-xl-4.mt-2
-                    h5  Титул
+                    div Титул
                     ul.mt-3
                         li Чемпион
                         li Юниор
@@ -143,14 +118,14 @@ append content
                         li Юниор-Премиор
                         li Международный Чемпион
                 .col-12.col-sm-12.col-md-5.col-xl-4.mt-2
-                    h5  Выстовочные достижения
+                    div Выстовочные достижения
                     ul.mt-3
                         li Номер один
                         li Номер два
                         li Номер три
                         li Номер четыре
                 .col-12.col-sm-12.col-md-5.col-xl-4.mt-2
-                    h5  Потомство:
+                    div Потомство:
                     ul.mt-3
                         li Litter A
                         li Litter B
