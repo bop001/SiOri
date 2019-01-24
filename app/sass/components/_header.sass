@@ -59,16 +59,16 @@
   transition: 0.3s
   cursor: pointer
 
-.nav-item:hover
-  background-color: #33383E
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.20)
+  &:hover
+    background-color: #33383E
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.20)
 
-.nav-item:hover .nav-link.main
-  color: #fff
-  transform: translateY(5px)
+  &:hover > .nav-link
+    color: #fff
+    transform: translateY(5px)
 
-.nav-item:hover > .sub-menu
-  display: block
+  &:hover > .sub-menu
+    display: block
 
 .socials
   cursor: pointer

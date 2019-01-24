@@ -393,20 +393,17 @@ select, input, textarea {
   -o-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer; }
-
-.nav-item:hover {
-  background-color: #33383E;
-  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2); }
-
-.nav-item:hover .nav-link.main {
-  color: #fff;
-  -webkit-transform: translateY(5px);
-      -ms-transform: translateY(5px);
-          transform: translateY(5px); }
-
-.nav-item:hover > .sub-menu {
-  display: block; }
+  .nav-item:hover {
+    background-color: #33383E;
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2); }
+  .nav-item:hover > .nav-link {
+    color: #fff;
+    -webkit-transform: translateY(5px);
+        -ms-transform: translateY(5px);
+            transform: translateY(5px); }
+  .nav-item:hover > .sub-menu {
+    display: block; }
 
 .socials {
   cursor: pointer;
