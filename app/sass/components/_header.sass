@@ -71,7 +71,7 @@
     display: block
 
 .socials
-  margin-top: 75px
+  margin-top: auto
 
   @include media(767)
     display: none
@@ -124,7 +124,10 @@
 .top-menu
 
   @include media(767)
-    height: 90px
+    height: auto
+    display: flex
+    justify-content: space-between
+
 
 .logo-company
 
@@ -148,5 +151,5 @@
   @include media(767)
     order: 2
 
-.navbar-outer
-  height: max-content
+.mobile-menu
+  display: none

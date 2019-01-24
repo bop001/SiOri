@@ -5,29 +5,10 @@ $( document ).ready(function() {
         touch: true
     })
 
-    clickButtonMenu();
+    //clickButtonMenu();
     lazyScroll($('.btn-up-1'),500);
     initPhotoSwape();
-
-    $('#mmenu-custom').mmenu({
-        extensions:['theme-white'],
-        offCanvas: {
-            position  : 'left'
-        }
-    },{
-        clone: true
-    });
-    var API = $('#mm-mmenu-custom').data('mmenu');
-
-    $('#humburger').click(function () {
-        API.open();
-    })
-    API.bind('open:finish', function () {
-        console.log('111')
-        $('.hamburger').addClass('is-active');
-    }).bind('close:finish', function () {
-        $('.hamburger').removeClass('is-active');
-    });
+    mmenuToggle($('#mobile-menu'), $('#humburger'));
 
 });
 
@@ -44,17 +25,53 @@ $( document ).ready(function() {
 
 // functions -------------------------------------------
 
+function mmenuToggle(menu, icon){
+    var $menu = menu.mmenu({
+        "extensions": [
+            "position-left",
+            "theme-white",
+        ]
+    });
+    var $icon = icon;
+    var api = $menu.data( "mmenu" );
+    $icon.on( "click", function() {
+        api.open();
+    });
+    api.bind( "open:start", function() {
+        $('body').addClass('menu-open');
+    });
+    api.bind( "open:finish", function() {
+        setTimeout(function() {
+            $icon.addClass( "is-active" );
+        }, 100);
+        $icon.on( "click", function() {
+            api.close();
+        });
+    });
+    api.bind( "close:finish", function() {
+        $('body').removeClass('menu-open');
+        setTimeout(function() {
+            $icon.removeClass( "is-active" );
+        }, 100);
+        $icon.on( "click", function() {
+            api.open();
+        });
+    });
+}
+
+
+
 function preloader () {
     $(window).on('load', function () {
         $('.loader-outer').fadeOut();
     });
 }
-
-function clickButtonMenu() {
-    $('.navbar-toggler').on('click', function () {
-       $(this).parent().toggleClass('active');
-    });
-}
+//
+// function clickButtonMenu() {
+//     $('.navbar-toggler').on('click', function () {
+//        $(this).parent().toggleClass('active');
+//     });
+// }
 
 function lazyScroll(anchor, speed) {
     $(window).scroll(function(){

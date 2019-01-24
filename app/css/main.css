@@ -406,7 +406,7 @@ select, input, textarea {
     display: block; }
 
 .socials {
-  margin-top: 75px; }
+  margin-top: auto; }
   @media (max-width: 767px) {
     .socials {
       display: none; } }
@@ -460,7 +460,15 @@ select, input, textarea {
 
 @media (max-width: 767px) {
   .top-menu {
-    height: 90px; } }
+    height: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
 
 @media (max-width: 767px) {
   .logo-company {
@@ -494,10 +502,8 @@ select, input, textarea {
         -ms-flex-order: 2;
             order: 2; } }
 
-.navbar-outer {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content; }
+.mobile-menu {
+  display: none; }
 
 html, body {
   width: 100%;
