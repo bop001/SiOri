@@ -302,7 +302,7 @@ select, input, textarea {
   background-position: center bottom;
   -webkit-background-size: cover;
           background-size: cover;
-  height: 350px;
+  height: 175px;
   color: #fff;
   margin-top: 0; }
 
@@ -406,7 +406,7 @@ select, input, textarea {
     display: block; }
 
 .socials {
-  margin-top: auto; }
+  margin-top: 75px; }
   @media (max-width: 767px) {
     .socials {
       display: none; } }
@@ -493,6 +493,11 @@ select, input, textarea {
     -webkit-order: 2;
         -ms-flex-order: 2;
             order: 2; } }
+
+.navbar-outer {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content; }
 
 html, body {
   width: 100%;
