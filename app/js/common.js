@@ -134,12 +134,17 @@ var pswpElement = document.querySelectorAll('.pswp')[0];
 $('.slick-slider').slick({
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows: false
+    arrows: false,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    mobileFirst: true
 });
 $('.slick-slider-with-arrows').slick({
     autoplay: true,
     autoplaySpeed: 3000,
     prevArrow: 'i.fas.fa-chevron-left',
-    nextArrow: 'i.fas.fa-chevron-right'
+    nextArrow: 'i.fas.fa-chevron-right',
+    pauseOnFocus: false,
+    pauseOnHover: false
 });
 
