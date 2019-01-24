@@ -8,6 +8,7 @@ $( document ).ready(function() {
     clickButtonMenu();
     lazyScroll($('.btn-up-1'),500);
     initPhotoSwape();
+
     $('#mmenu-custom').mmenu({
         extensions:['theme-white'],
         offCanvas: {
@@ -57,7 +58,7 @@ function clickButtonMenu() {
 
 function lazyScroll(anchor, speed) {
     $(window).scroll(function(){
-        if ($(window).scrollTop() >= 650) {
+        if ($(window).scrollTop() >= 350) {
             anchor.fadeIn();
         }else{
             anchor.fadeOut();
@@ -69,14 +70,13 @@ function lazyScroll(anchor, speed) {
         $("html, body").animate({scrollTop:$(href).offset().top}, speed);
     });
 }
+
 function initPhotoSwape() {
    $('.cats-images-item, .img-item').on('click', function(){
        var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
         gallery.init();
      });
  }
-
-
 
 var pswpElement = document.querySelectorAll('.pswp')[0];
 
