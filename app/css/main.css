@@ -20,7 +20,7 @@ body {
     width: auto; } }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
@@ -371,7 +371,7 @@ select, input, textarea {
   width: 250px;
   height: auto;
   top: -130%;
-  left: 115%;
+  left: 106%;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;

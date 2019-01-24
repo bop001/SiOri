@@ -136,4 +136,10 @@ $('.slick-slider').slick({
     autoplaySpeed: 3000,
     arrows: false
 });
+$('.slick-slider-with-arrows').slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    prevArrow: 'i.fas.fa-chevron-left',
+    nextArrow: 'i.fas.fa-chevron-right'
+});
 
