@@ -1,37 +1,37 @@
 extends blocks/_layout
 
 append content
-    header
+    main
         .title-page.mb-3
             .container
                 .row
                     .col-12.mt-5
                         h1 Контакты
 
-    section.contact-form.mb-5
-        .container
-            .row
-                .col-12.col-sm-12.col-md-4.col-xl-6
-                    .address
-                        p Адрес: г. Тюмень, ул. Широтная 156
-                    .phone
-                        a(href='tel:12345678') 123456789
-                    .email
-                        a(href='mailto:12345678') mail
-                    .contact-form-socials.mt-sm-3.mt-md-2.mt-xl-5
-                        a(href='#')
-                            i.fab.fa-facebook-f.contact
-                        a(href='#')
-                            i.fab.fa-vk.contact
-                        a(href='#')
-                            i.fab.fa-instagram.contact
-                .col-12.col-sm-12.col-md-8.col-xl-6
-                    form.custom.mt-3
-                        .form-group
-                            label(for='exampleInputEmail1') Email
-                            input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='Введите ваш email')
-                        .form-group
-                            label(for='exampleFormControlTextarea1') Ваше сообщение
-                            textarea#exampleFormControlTextarea1.form-control(rows='3')
-                        button.btn.btn-dark(type='submit') Отправить
+        .contact-form.mb-5
+            .container
+                .row
+                    .col-12.col-sm-12.col-md-4.col-xl-6
+                        .address
+                            p Адрес: г. Тюмень, ул. Широтная 156
+                        .phone
+                            a(href='tel:12345678') 123456789
+                        .email
+                            a(href='mailto:12345678') mail
+                        .contact-form-socials.mt-sm-3.mt-md-2.mt-xl-5
+                            a(href='#')
+                                i.fab.fa-facebook-f.contact
+                            a(href='#')
+                                i.fab.fa-vk.contact
+                            a(href='#')
+                                i.fab.fa-instagram.contact
+                    .col-12.col-sm-12.col-md-8.col-xl-6
+                        form.custom.mt-3
+                            .form-group
+                                label(for='exampleInputEmail1') Email
+                                input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='Введите ваш email')
+                            .form-group
+                                label(for='exampleFormControlTextarea1') Ваше сообщение
+                                textarea#exampleFormControlTextarea1.form-control(rows='3')
+                            button.btn.btn-dark(type='submit') Отправить
 
