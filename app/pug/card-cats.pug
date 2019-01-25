@@ -5,10 +5,16 @@ append content
         .breadcrumb-main.breadcrumb-dark
             nav(aria-label='breadcrumb')
                 .container
-                    ol.breadcrumb.new.pl-0
-                        li.breadcrumb-item
-                            a(href='#') Главная
-                        li.breadcrumb-item.active(aria-current='card-cats') Коты
+                    ol(itemscope itemtype="http://schema.org/BreadcrumbList").breadcrumb.new.pl-0
+                        li(itemprop="itemListElement" itemscope
+                        itemtype="http://schema.org/ListItem").breadcrumb-item
+                            a(href='#' itemprop="item")
+                                span(itemprop="name") Главная
+                                meta(itemprop="position" content="1")
+                        li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" aria-current='card-cats').breadcrumb-item.active
+                            a(href='#' itemprop="item")
+                                span(itemprop="name") Коты
+                                meta(itemprop="position" content="1")
 
 
         .title-page
@@ -43,7 +49,7 @@ append content
                                     span Чемпиона мира
                                         a.award-link(href='#award') (еще 9)
                                 li
-                                    a.award-link(href='#') Родословная
+                                    a.pedigree-link(href='#') Родословная
 
         .cats-images.mt-3.mt-md-3.mt-xl-5
             .container

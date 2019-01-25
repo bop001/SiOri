@@ -138,9 +138,11 @@
           <div class="breadcrumb-main breadcrumb-dark">
             <nav aria-label="breadcrumb">
               <div class="container">
-                <ol class="breadcrumb new pl-0">
-                  <li class="breadcrumb-item"><a href="#">Главная</a></li>
-                  <li class="breadcrumb-item active" aria-current="card-cats">Коты</li>
+                <ol class="breadcrumb new pl-0" itemscope itemtype="http://schema.org/BreadcrumbList">
+                  <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Главная</span>
+                      <meta itemprop="position" content="1"></a></li>
+                  <li class="breadcrumb-item active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" aria-current="card-cats"><a href="#" itemprop="item"><span itemprop="name">Коты</span>
+                      <meta itemprop="position" content="1"></a></li>
                 </ol>
               </div>
             </nav>
@@ -171,7 +173,7 @@
                       <li>Статус:<span>Не учавствует в племенной работе</span></li>
                       <li> Переехал<span>в семью</span></li>
                       <li>Титул:<span>Чемпиона мира<a class="award-link" href="#award">(еще 9)</a></span></li>
-                      <li><a class="award-link" href="#">Родословная</a></li>
+                      <li><a class="pedigree-link" href="#">Родословная</a></li>
                     </ul>
                   </div>
                 </div>
@@ -292,7 +294,7 @@
           <div class="container">
             <div class="row">
               <div class="col-8">
-                <div class="footer-links d-flex">
+                <div class="footer-links d-flex align-items-center">
                   <div class="footer-copy">
                     <p>© 2019 - Питомник "SiOri Praid"</p>
                   </div><span>|</span>
@@ -301,8 +303,8 @@
                 </div>
               </div>
               <div class="col-4 d-flex justify-content-end">
-                <div class="footer-make">
-                  <p>Сделано в tumedia</p>
+                <div class="footer-make d-flex align-items-center">
+                  <p>Сделано в<a href="">tumedia</a></p><img class="logo-tumedia" src="img/tumedia-logo-simbol.svg">
                 </div>
               </div>
             </div>

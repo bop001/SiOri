@@ -6,7 +6,8 @@ $( document ).ready(function() {
     })
 
     //clickButtonMenu();
-    lazyScroll($('.btn-up-1'),500);
+    lazyScrollFade($('.btn-up-1'),500);
+    lazyScroll($('.award-link'), 500);
     initPhotoSwape();
     mmenuToggle($('#mobile-menu'), $('#humburger'));
 
@@ -65,7 +66,7 @@ function preloader () {
     });
 }
 
-function lazyScroll(anchor, speed) {
+function lazyScrollFade(anchor, speed) {
     $(window).scroll(function(){
         if ($(window).scrollTop() >= 350) {
             anchor.fadeIn();
@@ -79,9 +80,16 @@ function lazyScroll(anchor, speed) {
         $("html, body").animate({scrollTop:$(href).offset().top}, speed);
     });
 }
+function lazyScroll(anchor, speed) {
+    anchor.on('click', function(e) {
+        e.preventDefault();
+        var href = $(this).attr("href");
+        $("html, body").animate({scrollTop:$(href).offset().top}, speed);
+    });
+}
 
 function initPhotoSwape() {
-   $('.cats-images-item, .img-item').on('click', function(){
+   $('').on('click', function(){
        var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
         gallery.init();
      });

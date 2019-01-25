@@ -5,10 +5,17 @@ append content
         .breadcrumb-main.breadcrumb-dark
             nav(aria-label='breadcrumb')
                 .container
-                    ol.breadcrumb.new.pl-0
-                        li.breadcrumb-item
-                            a(href='#') Главная
-                        li.breadcrumb-item.active(aria-current='blog') Блог
+                    ol(itemscope itemtype="http://schema.org/BreadcrumbList").breadcrumb.new.pl-0
+                        li(itemprop="itemListElement" itemscope
+                        itemtype="http://schema.org/ListItem").breadcrumb-item
+                            a(href='#' itemprop="item")
+                                span(itemprop="name") Главная
+                                meta(itemprop="position" content="1")
+                        li(itemprop="itemListElement" itemscope
+                        itemtype="http://schema.org/ListItem").breadcrumb-item
+                            a(href='#' itemprop="item")
+                                span(itemprop="name") Блог
+                                meta(itemprop="position" content="1")
         .title-page.mb-3
             .container
                 .row

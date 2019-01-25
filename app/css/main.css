@@ -336,8 +336,10 @@ select, input, textarea {
     .footer {
       display: none; } }
 
-.footer-links span {
-  margin: 0 10px; }
+.footer-links {
+  height: 30px; }
+  .footer-links span {
+    margin: 0 10px; }
 
 .btn-up-1 {
   width: 45px;
@@ -345,6 +347,11 @@ select, input, textarea {
   bottom: 35px;
   right: 0;
   cursor: pointer; }
+
+.logo-tumedia {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px; }
 
 .sidebar-header {
   padding: 15px; }
