@@ -8,7 +8,6 @@ $( document ).ready(function() {
     //clickButtonMenu();
     lazyScrollFade($('.btn-up-1'),500);
     lazyScroll($('.award-link'), 500);
-    initPhotoSwape();
     mmenuToggle($('#mobile-menu'), $('#humburger'));
 
 });
@@ -88,56 +87,11 @@ function lazyScroll(anchor, speed) {
     });
 }
 
-function initPhotoSwape() {
-   $('').on('click', function(){
-       var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
-        gallery.init();
-     });
- }
+$(".gallary-ps").jqPhotoSwipe({});
+$(".pedigree-link").jqPhotoSwipe({
+    forceSingleGallery: true
+});
 
-var pswpElement = document.querySelectorAll('.pswp')[0];
-
-// build items array
- var items = [
-   {
-        src: 'img/card-cats/cats.jpg',
-        w: 600,
-        h: 400
-    },
-    {
-         src: 'img/card-cats/cats_m.jpg',
-         w: 600,
-        h: 400
-    },
-     {
-         src: 'img/card-cats/litl.jpg',
-         w: 600,
-         h: 400
-     },
-     {
-        src: 'img/card-cats/litl2.jpg',
-         w: 600,
-         h: 400
-    },
-     {
-         src: 'img/card-cats/vipusk.jpg',
-         w: 600,
-         h: 400
-    },
-     {
-        src: 'img/card-cats/cats.jpg',
-         w: 600,
-         h: 400
-     }
-
- ];
-
-// define options (if needed)
- var options = {
-    // optionName: 'option value'
-     // for example:
-     index: 0 // start at first slide
- };
 
 $('.slick-slider').slick({
     autoplay: true,
